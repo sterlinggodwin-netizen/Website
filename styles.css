@@ -234,6 +234,16 @@ body {
   background: rgba(56, 189, 248, 0.05);
 }
 
+/*Styling for research page graphs */
+#figure-img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+
+}
+
 /* visuals styling */
 
 /* home page visuals*/
