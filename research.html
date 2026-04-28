@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Detecting Smurfing – Competitive Integrity Through Behavioral Analytics
+      Smurf Detection – Investigating Competitive Integrity Through Behavioral-based Modeling In Rocket League
     </title>
     <link rel="stylesheet" href="styles.css" />
 
@@ -62,65 +62,6 @@
             that behavioral features do provide meaningful support for smurf
             detection, while also highlighting inherent limitations driven by
             variability in player behavior.
-          </p>
-        </section>
-      </div>
-
-      <div class="card">
-        <section id="intro">
-          <h3>1. Introduction</h3>
-          <p>
-            Smurfing is a phenomenon in online gaming where highly skilled
-            players choose to create low-ranked accounts that deceive the
-            competitive ranking system to play against lower skilled players.
-            The reasoning for why players choose to do this is not clear to game
-            developers, rule-abiding players, or even researchers. In 2024, an
-            Ohio State University study surveyed 328 gaming-related, online
-            users and found that 69% admitted to smurfing themselves. This
-            phenomenon poses a persistent challenge for game developers in how
-            to maintain a balanced competitive environment when deception starts
-            at account creation. The consequences of smurfing ultimately
-            undermine the competitive integrity of online games by altering the
-            fairness and balance of competitive matchmaking. In doing so, it
-            distorts the ranked progression system and creates a more toxic
-            competitive environment. When left rampant, rule-abiding players
-            begin to feel the emotional distress of playing at a disadvantage,
-            causing a decline in player return rate.
-          </p>
-          <p>
-            Traditional detection and mitigation strategies primarily rely on
-            outcome-based signals such as win–loss patterns, rating
-            irregularities, or long-term account performance. These approaches
-            often struggle to detect irregular behavior during the early phases
-            of an account’s lifetime, prolonging the ability of smurfs to
-            negatively impact matchmaking quality. This study aims to combat
-            smurfing as early as possible by focusing on behavioral patterns
-            within games. Replay data was collected through the Ballchasing.com
-            API and processed to extract behavioral features across various
-            competitive ranks of the game Rocket League. Unsupervised learning
-            techniques are first employed to construct behavioral profiles that
-            characterize gameplay patterns within competitive tiers. Players
-            whose early gameplay exhibits significant deviation from these
-            rank-specific behavioral distributions are assigned an anomaly score
-            based on behavioral abnormality. To complement this unsupervised
-            profiling, a robust XGB classification model is trained and
-            optimized on the data, utilizing the unsupervised insights as
-            additional predictors. This system’s combination of unsupervised
-            insight and predictive analysis hope to give evidence that supports
-            the usage of behavioral statistics in producing high performance
-            anomaly analysis.
-          </p>
-          <p>
-            This research addresses the need for a more efficient and effective
-            smurf detection system, by addressing detection from a
-            behaviorally-focused understanding of smurfing. The findings of this
-            study aim to inform future matchmaking research and allow for
-            broader discussions about fairness and integrity in online
-            competitive environments. By emphasizing behavioral evidence and
-            early-stage inference, this work contributes a transparent and
-            extensible methodology for smurf detection. The methodology used in
-            this study hopes to complement existing ranking systems and offer
-            insight applicable to broader competitive gaming contexts.
           </p>
         </section>
       </div>
@@ -722,29 +663,29 @@
         </button>
         <ul class="dropdown hidden" id="selectdropdown">
           <li data-value="visuals_from_csv/Top 5 Thresholds - Bar plots.png">
-            Top 5 Thresholds
+            Graph 1 - Average Smurf Score Disparity per Rank
           </li>
-          <li data-value="visuals_from_csv/Point Disparity - Bar Plot.png">Point Disparity</li>
-          <li data-value="visuals_from_csv/AVG Score - Bar Plot.png">Average Score by Rank</li>
-          <li data-value="visuals_from_csv/Speed Profile - Bar plot.png">Speed Profile</li>
+          <li data-value="visuals_from_csv/Point Disparity - Bar Plot.png">Graph 2 - Average Score per Rank</li>
+          <li data-value="visuals_from_csv/AVG Score - Bar Plot.png">Graph 3 - Top 5 Smurf Detection Thresholds</li>
+          <li data-value="visuals_from_csv/Speed Profile - Bar plot.png">Graph 4 - Player Speed Profile</li>
           <li data-value="visuals_from_csv/Speed Distribution - Density plot.png">
-            Speed Distribution
+            Graph 5 - Average Speed Distribution
           </li>
-          <li data-value="visuals_from_csv/Air vs Ground - Bar plot.png">Air vs Ground</li>
-          <li data-value="visuals_from_csv/Boost Management - Bar Plot.png">Boost Management</li>
-          <li data-value="visuals_from_csv/Boost Usage - Box plot.png">Boost Usage</li>
-          <li data-value="visuals_from_csv/Boost Stealing - Density Plot.png">Boost Stealing</li>
+          <li data-value="visuals_from_csv/Air vs Ground - Bar plot.png">Graph 6 - Aerial vs Ground Comparison</li>
+          <li data-value="visuals_from_csv/Boost Management - Bar Plot.png">Graph 7 - Boost Management Comparison</li>
+          <li data-value="visuals_from_csv/Boost Usage - Box plot.png">Graph 8 - Boost Usage Comparison</li>
+          <li data-value="visuals_from_csv/Boost Stealing - Density Plot.png">Graph 9 - Boost Steal Distribution </li>
           <li data-value="visuals_from_csv/Pitch Positioning - Bar plot.png">
-            Pitch Positioning
+            Graph 10 - Player Positioning Comparison
           </li>
           <li data-value="visuals_from_csv/Defensive Stats - Bar and Box Plot.png">
-            Defensive Stats
+            Graph 11 - Defensive Comparison
           </li>
           <li data-value="visuals_from_csv/Normal Correlation - Heatmap.png">
-            Normal Correlation
+           Graph 12 - Normal Player Correlation Heatmap
           </li>
           <li data-value="visuals_from_csv/Smurf Correlation - Heatmap.png">
-            Smurf Correlation
+            Graph 13 - Smurf Correlation Heatmap
           </li>
         </ul>
       </div>
