@@ -234,7 +234,14 @@ body {
   background: rgba(56, 189, 248, 0.05);
 }
 
-/*Styling for research page graphs */
+/*Styling for research page graphs and tables, container to stop moving in size */
+
+.figure-container {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #figure-img {
   width: 100%;
   max-width: 800px;
