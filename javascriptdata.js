@@ -52,6 +52,7 @@ function showSummary() {
     marker: { color: ["#22c55e", "#f59e0b", "#ef4444", "#38bdf8"] },
   };
 
+  //gets rid of old plot so dosnt stack on each other
   Plotly.purge("plot");
   Plotly.newPlot(
     "plot",
