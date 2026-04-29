@@ -238,6 +238,7 @@ body {
 #figure-img {
   width: 100%;
   max-width: 800px;
+  max-height: 500px;
   display: block;
   margin: 1rem auto;
   border-radius: 8px;
